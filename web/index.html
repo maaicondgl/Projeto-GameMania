@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
@@ -11,13 +10,13 @@
 </head>
 
 <body>
-
+  <!-- MENU-NAV -->
   <header class="header">
-    <div class="container">
-      <a href="index.html" class="grid-4">
+    <div class="menu-container">
+      <a class="menu-logo" href="index.html" class="grid-4">
         <img src="img/logodesk.svg" alt="GameMania">
       </a>
-      <nav class="grid-12 header_menu">
+      <nav class="menu-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="sobre.html">Sobre</a></li>
@@ -27,8 +26,8 @@
       </nav>
     </div>
   </header>
-
-  <section class="introducao">
+  <!-- INTRODUÇAO -->
+  <section class="intro">
     <div class="container">
       <h1> MONTAMOS SEU COMPUTADOR COM O TAMANHO DO SEU SONHO </h1>
       <blockquote class="quote-externo">
@@ -37,40 +36,98 @@
       </blockquote>
     </div>
   </section>
-  <section class="produtos container">
-    <h2 class="subtitulo">Produtos</h2>
-    <ul class="produtos_lista">
+  <!-- PRODUTOS -->
+  <section class="produtos-container">
+    <div>
+      <h2 class="subtitulo">Produtos</h2>
+      <ul class="produtos-lista">
 
-      <li class="grid-1-3">
-        <div class="produtos_icone">
-          <img src="img/computador.svg" alt="GameMania Computador">
-        </div>
-        <h3>Computador</h3>
-      </li>
+        <li class="produto-item">
+          <div class="produtos_icone">
+            <img src="img/computador.svg" alt="GameMania Computador">
+          </div>
+          <a href="produtos.html">computador</a>
+        </li>
 
-      <li class="grid-1-3">
-        <div class="produtos_icone">
-          <img src="img/videogame.svg" alt="GameMania Videogame">
-        </div>
-        <h3>VideoGame</h3>
-      </li>
+        <li class="produto-item">
+          <div class="produtos_icone">
+            <img src="img/videogame.svg" alt="GameMania Videogame">
+          </div>
+          <a href="produtos.html">VideoGame</a>
+        </li>
 
-      <li class="grid-1-3">
-        <div class="produtos_icone">
-          <img src="img/jogos.svg" alt="GameMania Jogos">
-        </div>
-        <h3>Jogos</h3>
-      </li>
-
-    </ul>
-
-    <div class="call">
-      <p>clique e veja nossos produtos</p>
-      <a href="produtos.html" class="btn btn-preto">Produtos</a>
+        <li class="produto-item">
+          <div class="produtos_icone">
+            <img src="img/jogos.svg" alt="GameMania Jogos">
+          </div>
+          <a href="produtos.html">jogos</a>
+        </li>
+      </ul>
     </div>
-
   </section>
+  <!-- CLIENTES -->
+  <div class="cliente">
+    <h2 class="titulo-cliente">nossos clientes</h2>
+    <div class="foto-cliente">
+      <img src="img/Mask Group.png" alt="fotos-clientes">
+      <img src="img/Mask Group.png" alt="fotos-clientes">
+      <img src="img/Mask Group.png" alt="fotos-clientes">
+      <img src="img/Mask Group.png" alt="fotos-clientes">
+      <img src="img/Mask Group.png" alt="fotos-clientes">
+      <img src="img/Mask Group.png" alt="fotos-clientes">
+      <img src="img/Mask Group.png" alt="fotos-clientes">
+      <img src="img/Mask Group.png" alt="fotos-clientes">
+    </div>
+  </div>
 
+  <!-- BG FOOTER -->
+  <div class="bg-footer">
+
+    <blockquote class="bg-externo">
+      <p>“Meu sonho é viver em um mundo que posso jogar o dia inteiro e ninguém vai reclamar comigo”</p>
+      <cite>desconhecido</cite>
+    </blockquote>
+  </div>
+
+  <!-- FOOTER -->
+
+  <footer>
+    <div class="footer">
+      <div class="container-footer">
+
+        <div class="grid-8 footer_historia">
+          <h3>Nossa História</h3>
+          <p>Loja inaugurada em 2021, nosso sonho e levar tecnologia ao mundo, com os melhores preços do mercado</p>
+        </div>
+
+        <div class="grid-4 footer_contato">
+          <h3>Contato</h3>
+          <ul>
+            <li>- 11 98437-5172</li>
+            <li>- maaicondgl@outlook.com</li>
+            <li>- Jandira - SP </li>
+          </ul>
+        </div>
+
+        <div class="grid-4 footer_redes">
+          <h3>Contato</h3>
+          <ul>
+            <li><a href="http://facebook.com" target="_blank"><img src="img/facebook 1.png"></a></li>
+            <li><a href="http://instagram.com" target="_blank"><img src="img/instagram 1.png"></a></li>
+            <li><a href="http://twitter.com" target="_blank"><img src="img/twitter 1.png"></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <!-- COPYRIGHT -->
+
+    <div class="copy">
+      <div class="container">
+        <p class="grid-16">Maaicondgl 2021 - Alguns direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
