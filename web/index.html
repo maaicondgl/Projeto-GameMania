@@ -1,72 +1,79 @@
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>GameMania</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/grid.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home-GameMania</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/responsivo.css">
 </head>
 
 <body>
-  <!-- MENU-NAV -->
+  <!-- MENU NAV -->
   <header class="header">
-    <div class="menu-container">
-      <a class="menu-logo" href="index.html" class="grid-4">
+    <div class="menu">
+      <a href="menu-logo">
         <img src="img/logodesk.svg" alt="GameMania">
       </a>
-      <nav class="menu-nav">
+      <nav id="menub" class="menu-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="sobre.html">Sobre</a></li>
-          <li><a href="produtos.html">Produtos</a></li>
-          <li><a href="login.html">login</a></li>
+          <li><a href="index.html">Sobre</a></li>
+          <li><a href="index.html">Produtos</a></li>
+          <li><a href="index.html">Login</a></li>
         </ul>
       </nav>
+      <a class="barra" href="#" onclick="mostrarmenu">
+        <img class="menu-barra" src="img/menu-barra.svg" alt="menu de barras">
+      </a>
     </div>
+
   </header>
   <!-- INTRODUÇAO -->
   <section class="intro">
-    <div class="container">
-      <h1> MONTAMOS SEU COMPUTADOR COM O TAMANHO DO SEU SONHO </h1>
-      <blockquote class="quote-externo">
+    <div class="intro-cont">
+      <h1>MONTAMOS SEU COMPUTADOR COM O TAMANHO DO SEU SONHO</h1>
+      <blockquote>
         <p>“Os videogames estimulam a criatividade e ainda trazem horas incríveis de diversão”</p>
         <cite>GameMania</cite>
       </blockquote>
     </div>
   </section>
   <!-- PRODUTOS -->
-  <section class="produtos-container">
-    <div>
-      <h2 class="subtitulo">Produtos</h2>
+  <section class="produtos-cont">
+    <div class="produto-cont2">
+      <h2 class="subtitulo">produtos</h2>
       <ul class="produtos-lista">
-
-        <li class="produto-item">
-          <div class="produtos_icone">
-            <img src="img/computador.svg" alt="GameMania Computador">
+        <li class="produto-item produto-item1">
+          <div class="produto-icone">
+            <img src="img/computador.svg" alt="GameMania computador">
+            <a href="produto.html">computador</a>
           </div>
-          <a href="produtos.html">computador</a>
+
         </li>
 
-        <li class="produto-item">
-          <div class="produtos_icone">
-            <img src="img/videogame.svg" alt="GameMania Videogame">
+        <li class="produto-item produto-item2">
+          <div class="produto-icone">
+            <img src="img/videogame.svg" alt="GameMania videogame">
+            <a href="produto.html">videogame</a>
           </div>
-          <a href="produtos.html">VideoGame</a>
+
         </li>
 
-        <li class="produto-item">
-          <div class="produtos_icone">
-            <img src="img/jogos.svg" alt="GameMania Jogos">
+        <li class="produto-item produto-item3">
+          <div class="produto-icone">
+            <img src="img/jogos.svg" alt="GameMania">
+            <a href="produto.html">jogos</a>
           </div>
-          <a href="produtos.html">jogos</a>
+
         </li>
       </ul>
     </div>
   </section>
-  <!-- CLIENTES -->
-  <div class="cliente">
+  <!-- CLIENTE -->
+  <section class="cliente">
     <h2 class="titulo-cliente">nossos clientes</h2>
     <div class="foto-cliente">
       <img src="img/Mask Group.png" alt="fotos-clientes">
@@ -78,29 +85,25 @@
       <img src="img/Mask Group.png" alt="fotos-clientes">
       <img src="img/Mask Group.png" alt="fotos-clientes">
     </div>
-  </div>
-
-  <!-- BG FOOTER -->
+  </section>
   <div class="bg-footer">
-
     <blockquote class="bg-externo">
-      <p>“Meu sonho é viver em um mundo que posso jogar o dia inteiro e ninguém vai reclamar comigo”</p>
-      <cite>desconhecido</cite>
+      <p>“Meu sonho é viver em um mundo que posso jogar o dia inteiro e ninguém vai reclamar comigo”
+      <p>
+        <cite>desconhecido</cite>
     </blockquote>
   </div>
 
   <!-- FOOTER -->
-
   <footer>
     <div class="footer">
-      <div class="container-footer">
-
-        <div class="grid-8 footer_historia">
+      <div class="footer-cont">
+        <div class="footer-historia">
           <h3>Nossa História</h3>
-          <p>Loja inaugurada em 2021, nosso sonho e levar tecnologia ao mundo, com os melhores preços do mercado</p>
+          <p>Loja inaugurada em 2021, nosso sonho e levar tecnologia ao mundo, com os melhores preços do mercado,O fluxo do tempo é sempre cruel, sua velocidade parece diferente para cada pessoa, mas ninguém pode mudá-la. Uma coisa que não muda com o tempo é a memória dos dias mais jovens</p>
         </div>
 
-        <div class="grid-4 footer_contato">
+        <div class="footer-contato">
           <h3>Contato</h3>
           <ul>
             <li>- 11 98437-5172</li>
@@ -109,25 +112,26 @@
           </ul>
         </div>
 
-        <div class="grid-4 footer_redes">
-          <h3>Contato</h3>
+        <div class="footer-redes">
+          <h3>redes</h3>
           <ul>
-            <li><a href="http://facebook.com" target="_blank"><img src="img/facebook 1.png"></a></li>
-            <li><a href="http://instagram.com" target="_blank"><img src="img/instagram 1.png"></a></li>
-            <li><a href="http://twitter.com" target="_blank"><img src="img/twitter 1.png"></a></li>
+            <li><a href="http://facebook.com" target="_blank"><img src="img/facebook.svg"></a></li>
+            <li><a href="http://instagram.com" target="_blank"><img src="img/instagram.svg"></a></li>
+            <li><a href="http://twitter.com" target="_blank"><img src="img/twitter.svg"></a></li>
           </ul>
         </div>
-
       </div>
     </div>
+
     <!-- COPYRIGHT -->
 
     <div class="copy">
       <div class="container">
-        <p class="grid-16">Maaicondgl 2021 - Alguns direitos reservados.</p>
+        <p>Maaicondgl 2021 - Alguns direitos reservados.</p>
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

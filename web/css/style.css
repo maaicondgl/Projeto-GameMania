@@ -22,61 +22,48 @@ p {
 }
 
 /* MENU */
+
 .header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: #3ebcfe; /* azul */
+  background-color: #3ebcfe;
+}
+.menu {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 15px 0;
-  z-index: 10;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.menu-container {
-  max-width: 960px;
-  margin: 0 200px;
-}
-.menu-container::after,
-.menu-container::before {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-a.menu-logo {
-  display: block;
-  float: left;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.menu-nav {
-  float: right;
-  margin-top: 45px;
-}
-.menu-nav li {
-  display: inline-block;
+.menu-nav ul {
+  display: flex;
+  flex-wrap: wrap;
 }
 .menu-nav a {
+  font-size: 1.25em;
+  font-weight: bold;
   display: block;
   padding: 10px;
   text-decoration: none;
-  color: #000;
-  font-size: 1.25em;
   text-transform: uppercase;
-  font-weight: bold;
+  color: #000;
 }
-.menu-nav ul li a:hover {
+.menu-nav a:hover {
   color: #fff;
 }
+.menu-barra {
+  width: 10px;
+  display: none;
+}
+/* INTRODUÇAO  */
 
-/* INTRODUÇAO */
 .intro {
   background: url(../img/bg-home.jpg) no-repeat center center;
   background-size: cover;
-  padding: 150px 0;
+  padding: 100px 0;
   text-align: center;
   color: #fff;
 }
-
 .intro h1 {
   font-size: 48px;
   color: #fff;
@@ -91,43 +78,39 @@ a.menu-logo {
 
 /* PRODUTOS */
 
-.produtos-container {
-  margin: 0 auto;
+.produtos-cont {
+  height: 420px;
   background-color: #000;
-  padding: 0 125px;
-}
-.produtos-container::after,
-.produtos-container::before {
-  content: "";
-  display: table;
-  clear: both;
-}
-.produtos-container ul {
-  padding-left: 40px;
+  padding-top: 50px;
+  padding-bottom: 103px;
 }
 .subtitulo {
-  text-align: center;
-  padding-right: 40px;
-  padding-top: 30px;
-  font-size: 2.25em;
-  text-transform: uppercase;
   color: #fff;
+  font-size: 2.25em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.produtos-lista {
+  max-width: 900px;
+  display: flex;
+  padding-left: 400px;
 }
 .produto-item {
-  width: 300px;
-  float: left;
   background-color: #fff;
-  margin: 40px 100px;
+  margin-left: 50px;
   border-radius: 10px;
 }
-
-ul li h3 {
-  text-align: center;
-  text-transform: uppercase;
+.produto-item1 {
+  padding-top: 6px;
 }
-
-.produto_icone {
-  max-width: 100%;
+.produto-item2 {
+  padding-top: 6px;
+}
+.produto-item3 {
+  padding-top: 3px;
 }
 
 .produto-item a {
@@ -136,12 +119,13 @@ ul li h3 {
   text-align: center;
   font-weight: bold;
   color: #000;
-  padding: 20px 100px;
+  padding: 31px 101px;
   background-color: #3ebcfe;
   display: inline-block;
   width: 100px;
   border-radius: 10px;
 }
+
 .produto-item a:hover {
   color: #fff;
 }
@@ -151,6 +135,7 @@ ul li h3 {
 }
 
 /* NOSSOS CLIENTES */
+
 .titulo-cliente {
   text-align: center;
   margin-top: 20px;
@@ -159,10 +144,12 @@ ul li h3 {
   color: #000;
 }
 .foto-cliente {
-  margin: 20px 200px;
+  margin: 20px 250px;
+  width: 1414px;
 }
 
 /* BG-FOOTER */
+
 .bg-footer {
   background: url(../img/bg-footer.png) no-repeat center center;
   background-size: cover;
@@ -185,7 +172,10 @@ ul li h3 {
   background: #000;
   color: #fff;
   padding-top: 30px;
-  padding-bottom: 250px;
+  padding-bottom: 20px;
+}
+.footer-cont {
+  display: flex;
 }
 
 .footer h3 {
@@ -206,30 +196,47 @@ ul li h3 {
   margin: 6px 0 12px 0;
 }
 
-.footer_historia {
-  margin-left: 200px;
-  padding-right: 100px;
+.footer-historia {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
+  padding-left: 100px;
 }
 
-.footer_contato ul li {
-  font-size: 14px;
+.footer_historia p {
+  font-size: 20px;
+}
+
+.footer-contato {
+  padding-left: 300px;
+}
+.footer-contato ul li {
+  font-size: 16px;
   line-height: 20px;
   font-family: Georgia, "Times New Roman", serif;
 }
-
-.footer_redes ul li {
+.footer-redes {
+  padding-left: 400px;
+}
+.footer-redes ul li {
   display: inline-block;
   margin-right: 10px;
 }
 
-/* .footer_redes ul li a {
+.footer-redes ul li a {
   border: 3px solid #3ebcfe;
   display: block;
   padding: 10px;
-} */
+}
+.footer-redes ul li a:hover {
+  border-color: #fff;
+}
 
 .copy {
   width: 100%;
   background: #3ebcfe;
+}
+.copy p {
+  text-align: center;
   padding: 20px 0;
 }

@@ -1,0 +1,215 @@
+/* RESPONSIVIDADE  HOME DESKTOP*/
+
+@media screen and (max-width: 1250px) {
+  /* MENU */
+  .menu {
+    padding: 15px 50px;
+  }
+  /* INTRODUÇAO */
+  .intro {
+    padding: 30px 10px;
+  }
+  /* PRODUTO */
+  .produtos-lista {
+    padding-left: 50px;
+  }
+  /* CLIENTES */
+  .foto-cliente {
+    margin: 20px 240px;
+  }
+  /* FOOTER */
+  .footer-historia {
+    padding-left: 71px;
+  }
+
+  .footer-contato {
+    padding: 0 50px;
+  }
+
+  .footer-redes {
+    padding: 0 50px;
+  }
+
+  .copy p {
+    text-align: center;
+  }
+}
+/* TABLET */
+@media screen and (max-width: 768px) {
+  .menu {
+    padding: 20px 145px;
+    width: 478px;
+  }
+  .menu-nav {
+    padding-left: 45px;
+    padding-top: 10px;
+  }
+
+  .intro h1 {
+    font-size: 1em;
+    padding: 0;
+  }
+  .intro p {
+    padding: 15px;
+  }
+
+  /* PRODUTOS */
+  .produtos-cont {
+    height: 350px;
+  }
+  .produto-cont2 {
+    height: 400px;
+  }
+
+  .produtos-lista {
+    padding-left: 10px;
+  }
+  .produto-item {
+    width: 180px;
+    height: 250px;
+  }
+  .produto-icone {
+    width: 180px;
+    height: 232px;
+  }
+
+  .produto-icone img {
+    width: 180px;
+    height: 232px;
+  }
+  .produto-item a {
+    text-align: center;
+    width: 180px;
+    padding: 20px 0;
+  }
+
+  /* CLIENTES */
+
+  .foto-cliente {
+    width: 720px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 25px;
+  }
+  .foto-cliente img {
+    width: 160px;
+    height: 140px;
+    padding: 10px 10px;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    height: 273px;
+  }
+  .footer-cont {
+    height: 281.5px;
+    padding: 0 40px;
+  }
+
+  .footer-historia {
+    width: 215px;
+    height: 100px;
+  }
+
+  .footer-historia {
+    padding-left: 0;
+  }
+
+  .footer-contato {
+    padding-left: 30px;
+    padding-right: 0px;
+  }
+  .footer-redes {
+    padding-right: 0px;
+    padding-left: 30px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .header {
+    width: 320px;
+    display: flex;
+    padding: 20px 0px;
+  }
+
+  .menu {
+    padding: 0;
+  }
+  .menu img {
+    width: 150px;
+    padding: 0 10px;
+  }
+  .barra {
+    display: inline-block;
+    padding-right: 70px;
+  }
+  .barra img {
+    display: flex;
+    width: 20px;
+  }
+  .menu-nav {
+    display: none;
+  }
+
+  /* INTRODUÇAO */
+  .intro {
+    padding: 30px 0;
+  }
+  .intro-cont {
+    display: none;
+  }
+
+  /* PRODUTOS */
+
+  .produtos-cont {
+    width: 320px;
+    height: 1000px;
+  }
+  .produtos-lista {
+    flex-direction: column;
+    padding-left: 0;
+  }
+  .produto-item {
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 100px;
+  }
+  /* CLIENTE */
+
+  .cliente {
+    display: none;
+  }
+
+  /* FOOTER */
+
+  .bg-footer {
+    margin: 0;
+  }
+  .bg-externo {
+    display: none;
+  }
+  .footer {
+    height: 490px;
+    padding: 0;
+  }
+  .footer-cont {
+    flex-wrap: wrap;
+    height: 460px;
+    padding: 0;
+  }
+  .footer-historia {
+    font-size: 0.875em;
+    width: 320px;
+    padding: 20px 20px;
+  }
+  .footer-contato {
+    padding-top: 90px;
+    padding-left: 20px;
+  }
+  .footer-redes {
+    padding-left: 20px;
+  }
+  .copy {
+    font-size: 0.875em;
+  }
+}
