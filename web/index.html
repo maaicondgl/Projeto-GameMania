@@ -1,4 +1,5 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
@@ -8,16 +9,17 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/responsivo.css">
+  <script src="js/jquery-3.6.0.js"></script>
 </head>
 
 <body>
   <!-- MENU NAV -->
   <header class="header">
-    <div class="menu">
-      <a href="menu-logo">
-        <img src="img/logodesk.svg" alt="GameMania">
+    <div class="header-nav">
+      <a href="index.html">
+        <img class="logo" src="img/logodesk.svg" alt="GameMania">
       </a>
-      <nav id="menub" class="menu-nav">
+      <nav id="menu" class="menu-nav">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="index.html">Sobre</a></li>
@@ -25,7 +27,7 @@
           <li><a href="index.html">Login</a></li>
         </ul>
       </nav>
-      <a class="barra" href="#" onclick="mostrarmenu">
+      <a id="barra" class="barra" href="#">
         <img class="menu-barra" src="img/menu-barra.svg" alt="menu de barras">
       </a>
     </div>
@@ -131,6 +133,20 @@
       </div>
     </div>
   </footer>
+  <!-- <script>
+    let menu = document.getElementById("menu");
+    function mostrarmenu() {
+      console.log(getComputedStyle(menu).display);
+      console.log(menu.style.display)
+
+      if (getComputedStyle(menu).display != "none") {
+        menu.style.display = "none"
+      } else {
+        menu.style.display == "flex"
+      }
+    }
+    </script> -->
+
   <script src="js/script.js"></script>
 </body>
 

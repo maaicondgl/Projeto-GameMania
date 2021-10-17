@@ -2,8 +2,11 @@
 
 @media screen and (max-width: 1250px) {
   /* MENU */
-  .menu {
+  .header-nav {
     padding: 15px 50px;
+  }
+  .menu-nav a:hover {
+    color: #fff;
   }
   /* INTRODUÇAO */
   .intro {
@@ -36,7 +39,7 @@
 }
 /* TABLET */
 @media screen and (max-width: 768px) {
-  .menu {
+  .header-nav {
     padding: 20px 145px;
     width: 478px;
   }
@@ -132,23 +135,43 @@
     padding: 20px 0px;
   }
 
-  .menu {
+  .header-nav {
     padding: 0;
   }
-  .menu img {
+  .menu-nav {
+    display: none;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  .menu-nav ul {
+    flex-direction: column;
+  }
+  .menu-nav ul a {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  }
+
+  .menu-ativo {
+    display: flex;
+  }
+  .logo {
     width: 150px;
     padding: 0 10px;
   }
   .barra {
     display: inline-block;
-    padding-right: 70px;
+    position: absolute;
+    width: 100%;
+    /* right: 0px;
+    left: 275px; */
+    top: 20px;
   }
   .barra img {
     display: flex;
     width: 20px;
+    padding-left: 20px;
   }
-  .menu-nav {
-    display: none;
+  .logo {
+    padding-left: 87px;
   }
 
   /* INTRODUÇAO */
