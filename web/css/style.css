@@ -94,7 +94,7 @@ p {
 }
 
 .produtos-lista {
-  max-width: 900px;
+  width: 900px;
   display: flex;
   padding-left: 400px;
 }

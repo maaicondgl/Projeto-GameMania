@@ -1,0 +1,42 @@
+/* CADASTRO E LOGIN */
+
+.login-container {
+  background-color: #000;
+  display: flex;
+}
+.login-container a {
+  font-weight: bold;
+  color: #000;
+  background-color: #3ebcfe;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.campo {
+  color: #fff;
+  padding-top: 10px;
+}
+.senha {
+  margin-bottom: 30px;
+}
+.cadastro {
+  margin: 50px 300px;
+}
+.login {
+  margin: 50px 300px;
+}
+.campo input {
+  color: #000;
+  border: 4px solid #3ebcfe;
+  width: 300px;
+  height: 20px;
+}
+.campo label {
+  padding-left: 10px;
+  font-weight: bold;
+}
+
+/* FOOTER */
+.bg-footer {
+  margin: 0;
+}
